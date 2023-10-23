@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fernando Jesús Fernández Trujillo</h1>
+    <h2>Índice</h2>
+    <ul>
+        <a href="#sobremi"><li>Sobre mi</li></a>
+        <a href="#Aficiones"><li>Tabla de aficiones</li></a>
+        <a href="#Ciudades"><li>Ciudades que he visitado</li></a>
+        <a href="#formulario">Formulario</a>
+    </ul>
+    <h4 id="sobremi">Sobre mi:</h4>
+    <p>Soy Fernando, tengo 22 años y estoy estudiando Desarrollo de Aplicaciones Web en Medac.De mi personalidad cabe destacar que soy un poco tímido,soy trabajador y educado, me gusta hacer deporte, sobre todo ir al gimnasio o jugar al fútbol.</p>
+    <h4>Aficiones:</h4>
+    <table width="80%" border="1">
+        <caption id="Aficiones">Tabla de Aficiones</caption>
+        <thead>
+            <tr>
+                <th>Afición</th>
+                <th>Descripción</th>
+                <th>Página Web</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://esportenewsmundo.com.br/wp-content/uploads/2021/03/nabil-fekir-betisdvg.jpg" alt="Futbol" height="100"></td>
+                <td>El futbol es el deporte que más me gusta, tanto verlo como practicarlo.</td>
+                <td><a href="https://es.wikipedia.org/wiki/F%C3%BAtbol" target="_blank"><button>Mas Informacion</button></a></td>
+            </tr>
+            <tr>
+                <td><img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2023/02/25/16773482282398.jpg" alt="F1" height="100" ></a></td>
+                <td>Es la principal competición de automovilismo internacional y el campeonato de deportes de motor más popular y prestigioso del mundo. La entidad que la dirige es la Federación Internacional del Automóvil (FIA).</td>
+                <td><a href="https://es.wikipedia.org/wiki/F%C3%B3rmula_1" target="_blank"><button>Mas Informacion</button></a></td>
+            </tr>
+            <tr>
+                <td><img src="https://marketing4ecommerce.net/wp-content/uploads/2018/08/Depositphotos_8480205_m-2015-compressor.jpg" alt="Musica" height="100"></td>
+                <td>La musica sirve la uso a diario para casi cualquier tarea, ya sea hacer deporte,programar o jugar</td>
+                <td><a href="https://es.wikipedia.org/wiki/M%C3%BAsica" target="_blank"><button>Mas Informacion</button></a></td>
+            </tr>
+            <tr>
+                <td><img src="https://resizer.enetpulse.com/datacore/2023-7-14/900x600-082f54a2316992a61767427adc4b5acd.jpg" alt="Fifa" height="100"></td>
+                <td>Los videojuegos son una parte importante para mi entretenimiento, suelo jugarlos bastante con amigos</td>
+                <td><a href="https://www.ea.com/es-es/games/ea-sports-fc/fc-24" target="_blank"><button>Mas Informacion</button></a></td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/OED-LEXX-Bungler.jpg" alt="Programacion"height=100></td>
+                <td>La programación es lo que estoy estudiando y a lo que me gustaría dedicarme en un futuro.</td>
+                <td><a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n" target="_blank"><button>Mas Informacion</button></a></td>
+            </tr>
+        </tbody>
+    </table>
+    <h4 id="Ciudades">Ciudades que he visitado:</h4>
+    <ul>
+        <a href="https://es.wikipedia.org/wiki/Madrid" target="_blank"><li>Madrid</li></a>
+        <a href="https://es.wikipedia.org/wiki/Par%C3%ADs" target="_blank"><li>Paris</li></a>
+        <a href="https://es.wikipedia.org/wiki/Londres" target="_blank"><li>Londres</li></a>
+        <a href="https://es.wikipedia.org/wiki/Berl%C3%ADn" target="_blank"><li>Berlin</li></a>
+        <a href="https://es.wikipedia.org/wiki/Praga" target="_blank"><li>Praga</li></a>
+        <a href="https://es.wikipedia.org/wiki/Roma" target="_blank"><li>Roma</li></a>
+    </ul>
+    <h4>Formulario</h4>
+    <form action="#" method="post" id="formulario">
+        <fieldset>
+            <legend>Informacion Personal</legend>
+            <label for="nombre">Nombre(max 20 caracteres):</label>
+            <input type="text" id="nombre" name="nombre" maxlength="20" required><br><br>
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+            <label for="fecha">Hora y Fecha:</label>
+            <input type="datetime-local" id="fecha" name="fecha" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="dni">Subir Archivo(DNI):</label>
+            <input type="file" id="dni" name="dni"><br><br>
+            <label for="mes">Mes actual:</label>
+            <input type="month" id="mes" name="mes" required><br><br>
+            <label for="semana">Semana actual:</label>
+            <input type="week" id="semana" name="semana" required><br><br>
+            <label for="numero">Número favorito:</label>
+            <input type="number" id="numero" name="numero" required><br><br>
+            <label for="contrasenia">Contraseña:</label>
+            <input type="password" id="contrasenia" name="contrasenia" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Otras Cuestiones</legend>
+            <label>Género:</label><br>
+            <input type="radio" id="masculino" name="genero" value="Masculino"> <label for="masculino">Masculino</label><br>
+            <input type="radio" id="femenino" name="genero" value="Femenino"> <label for="femenino">Femenino</label><br>
+            <input type="radio" id="otro" name="genero" value="Otro"> <label for="otro">Otro</label><br><br>
+            <label for="rango">Rango de satisfacción:</label>
+            <input type="range" id="rango" name="rango"><br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required><br><br>
+            <label for="sitioweb">Sitio Web:</label>
+            <input type="url" id="sitioweb" name="sitioweb"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Deportes</legend>
+            <label for="opcion1">Elija su deporte favorito:</label>
+            <select id="opcion1" name="opcion1">
+                <option value="opcion1">Futbol</option>
+                <option value="opcion2">Formula 1</option>
+                <option value="opcion3">Baloncesto</option>
+                <option value="opcion4" selected>Otro</option>
+            </select><br><br>
+            <label for="observaciones">Observaciones:</label><br>
+            <textarea id="observaciones" name="observaciones" cols="60" rows="15" maxlength="200"></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
