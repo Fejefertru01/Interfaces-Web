@@ -28,3 +28,8 @@ table button:hover{
     background-color: #0f5cb4;
     transform: translateY(-3px);
 }
+
+table td {
+    text-align: center;
+    vertical-align: middle;
+}
