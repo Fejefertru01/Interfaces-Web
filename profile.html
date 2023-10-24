@@ -8,15 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <nav class="nav navbar navbar-dark bg-dark">
+    <nav class="nav navbar navbar-dark bg-dark" id="nav">
         <div>
             <ul>
-                <li><a href="#sobremi">Sobre mi</a></li>
+                <li><a href="#sobremi">Sobre mí</a></li>
                 <li><a href="#Aficiones">Tabla aficiones</a></li>
                 <li><a href="#Ciudades">Ciudades</a></li>
+                <li><a href="#enlacesInteres">Enlaces de Interés</a></li>
+                <li><a href="#Actividades">Actividades Recientes</a></li>
+                <li><a href="#Galeria">Galería</a></li>
+                <li><a href="#InfoAdicional">Información Adicional</a></li>
             </ul>
         </div>
     </nav>
@@ -24,7 +29,8 @@
 
 
     <div id="primerDiv" class="container shadow p-3 mb-5 bg-body rounded">
-        <h4 id="sobremi"><i class="fa-solid fa-user"></i> Sobre mi:</h4>
+        <h4 id="sobremi"><i class="fa-solid fa-user"></i> Sobre mi: Fernando Jesús Fernández Trujillo</h4>
+        <img id="mifoto" src="carnet.jpg" alt="Yo" class="img-thumbnail">
         <p>Soy Fernando, tengo 22 años y estoy estudiando Desarrollo de Aplicaciones Web en Medac. De mi personalidad
             cabe destacar que soy un poco tímido,soy trabajador y educado, me gusta hacer deporte, sobre todo ir al
             gimnasio o jugar al fútbol.Además, en mi tiempo libre me gusta jugar videojuegos o salir con mis amigos.</p>
@@ -32,7 +38,7 @@
     <div class="container shadow p-3 mb-5 bg-body rounded">
 
         <h4 id="Aficiones"><i class="fa-solid fa-futbol"></i> Aficiones:</h4>
-        <table class="table table-dark table-hover">
+        <table class="table table-dark table-hover table-zoom">
             <thead>
                 <tr>
                     <th>Afición</th>
@@ -43,14 +49,14 @@
             <tbody>
                 <tr>
                     <td><img src="https://images.ecestaticos.com/2Ai0pTdgDxBAcbTDG1gjVj5BAzk=/0x0:2272x1515/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F07c%2F278%2Fe0c%2F07c278e0cb5d6298dfb615aa2783e8c4.jpg"
-                            alt="Futbol" id="foto"></td>
+                            alt="Futbol" id="fotostabla"></td>
                     <td>El futbol es el deporte que más me gusta, tanto verlo como practicarlo.</td>
                     <td><a href="https://es.wikipedia.org/wiki/F%C3%BAtbol" target="_blank"><button>Mas
                                 Informacion</button></a></td>
                 </tr>
                 <tr>
                     <td><img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2023/02/25/16773482282398.jpg"
-                            alt="F1" id="foto"></a></td>
+                            alt="F1" id="fotostabla"></a></td>
                     <td>Es la principal competición de automovilismo internacional y el campeonato de deportes de motor
                         más popular y prestigioso del mundo. La entidad que la dirige es la Federación Internacional del
                         Automóvil (FIA).</td>
@@ -59,7 +65,7 @@
                 </tr>
                 <tr>
                     <td><img src="https://play-lh.googleusercontent.com/1wKUUHWoASPyJRQzd_WSXG1jXHaNGIolS9pV5-K_g3HLqGcgX4Cu6garNwXfrJrNnzq-"
-                            alt="Musica" id="foto"></td>
+                            alt="Musica" id="fotostabla"></td>
                     <td>La musica la uso a diario para casi cualquier tarea, ya sea hacer deporte,programar o
                         jugar</td>
                     <td><a href="https://es.wikipedia.org/wiki/M%C3%BAsica" target="_blank"><button>Mas
@@ -67,7 +73,7 @@
                 </tr>
                 <tr>
                     <td><img src="https://resizer.enetpulse.com/datacore/2023-7-14/900x600-082f54a2316992a61767427adc4b5acd.jpg"
-                            alt="Fifa" id="foto"></td>
+                            alt="Fifa" id="fotostabla"></td>
                     <td>Los videojuegos son una parte importante para mi entretenimiento, suelo jugarlos bastante con
                         amigos</td>
                     <td><a href="https://www.ea.com/es-es/games/ea-sports-fc/fc-24" target="_blank"><button>Mas
@@ -75,7 +81,7 @@
                 </tr>
                 <tr>
                     <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/OED-LEXX-Bungler.jpg"
-                            alt="Programacion" id="foto"></td>
+                            alt="Programacion" id="fotostabla"></td>
                     <td>La programación es lo que estoy estudiando y a lo que me gustaría dedicarme en un futuro.</td>
                     <td><a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n" target="_blank"><button>Mas
                                 Informacion</button></a></td>
@@ -106,13 +112,21 @@
             </a>
         </ul>
     </div>
-    <div class="container shadow p-3 mb-5 bg-body rounded ">
+    <div class="container shadow p-3 mb-5 bg-body rounded " id="enlacesInteres">
         <h4 id="enlaces"><i class="fa-solid fa-link"></i> Enlaces de interes:</h4>
         <a href="https://github.com/Fejefertru01" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
         <a href="https://getbootstrap.com/" target="_blank"><i class="fa-brands fa-bootstrap fa-2xl"></i></a>
+        <a href="https://www.php.net/" target="_blank"><i class="fa-brands fa-php fa-2xl"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-js fa-2xl"></i></a>
+        
+
+        
+
+
     </div>
-    <div class="container shadow p-3 mb-5 bg-body rounded">
-        <h4 id="Actividades"><i class="fa-solid fa-backward"></i> Actividades recientes:</h4>
+    <div class="container shadow p-3 mb-5 bg-body rounded" id="Actividades">
+        <h4 ><i class="fa-solid fa-backward"></i> Actividades recientes:</h4>
         <table class="table table-dark table-hover">
             <thead>
                 <tr>
@@ -138,21 +152,44 @@
         </table>
     </div>
     <div class="container shadow p-3 mb-5 bg-body rounded">
-        <h4 id="galeria"><i class="fa-solid fa-image"></i> Galeria de imagenes:</h4>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <h4 id="Galeria"><i class="fa-solid fa-image"></i> Galeria de imagenes:</h4>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="https://img.freepik.com/vector-gratis/patron-espacio-transparente-color_102902-2360.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698019200&semt=ais" alt="First slide">
+                <img src="https://pbs.twimg.com/profile_banners/1182444574167334913/1689009656/600x200" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://okdiario.com/img/2020/02/03/-que-hora-es-en-el-espacio-esta-es-la-respuesta-655x368.jpg" alt="Second slide">
+                <img src="https://pbs.twimg.com/profile_banners/14872237/1696412969/600x200" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide">
+                <img src="https://pbs.twimg.com/profile_banners/218531242/1697786964/600x200" class="d-block w-100" alt="...">
               </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
     </div>
+    
+    <div class="container shadow p-3 mb-5 bg-body rounded" id="InfoAdicional">
+        <h4><i class="fa-solid fa-circle-info fa-lg"></i>Información Adicional:</h4>
+        <p>Como informacion adicional, puedo añadir que soy de Rute, un pueblo de Cordoba, hice allí los estudios primarios, secundarios y el bachillerato tecnológico. Cuando lo acabé entré a Ingeniería Industrial pero después de tres años la dejé y entré al curso de DAW en el que estoy actualmente</p>
+    </div>
+    <a href="#nav" id="flechaArriba"><i class="fa-solid fa-circle-arrow-up fa-2xl"></i></a>
 </body>
-
+<footer>
+    <div class="text-center p-3 bg-dark" id="footer">
+    © 2023 Fejefertru
+  </div>
+</footer>
 </html>

@@ -1,22 +1,37 @@
 nav li{
     display: inline-block;
-    padding:0px 15rem;
+    padding:0px 4.5rem;
+    margin-top: 1%;
 }
 nav li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 1.5rem;
     font-weight: bold;
+    color: white;
+}
+#primerDiv{
+    margin-top: 2%;
 }
 
-#foto{
+#fotostabla{
     width: 150px;
     height: 150px;
     border-radius: 30%;
     border: 2px solid #8397E6;
 }
-#primerDiv{
-    margin-top: 2%;
+
+#primerDiv p{
+    margin-top: 3%;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+#mifoto{
+    
+    float: left;
+    height: 200px;
+}
+
+#enlacesInteres a{
+    margin-right: 1%;
 }
 
 table button{
@@ -54,7 +69,13 @@ div ul a{
 div ul a:hover{
     text-decoration: underline  ;
 }
-
-nav li a{
+#flechaArriba{
+        position: fixed;
+        top: 80%; 
+        right: 2%; 
+    
+}
+#footer{
     color: white;
+    margin-top: 0.5%;
 }
