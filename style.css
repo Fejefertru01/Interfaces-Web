@@ -15,6 +15,9 @@ nav li a{
     border-radius: 30%;
     border: 2px solid #8397E6;
 }
+#primerDiv{
+    margin-top: 2%;
+}
 
 table button{
     background-color: #0f5cb4b4;
@@ -32,4 +35,26 @@ table button:hover{
 table td {
     text-align: center;
     vertical-align: middle;
+}
+table{
+    border: 2px solid #8397E6;
+}
+
+table td img:hover{
+    transform: translateY(-3px);
+}
+table th{
+    text-align: center;
+    vertical-align: middle;  
+}
+
+div ul a{
+    text-decoration: none;
+}
+div ul a:hover{
+    text-decoration: underline  ;
+}
+
+nav li a{
+    color: white;
 }
