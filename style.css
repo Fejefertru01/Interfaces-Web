@@ -1,4 +1,4 @@
-
+/* COLOR FONDO  */
 body{
     background-color: #F4F4F4 !important;
 }
@@ -39,7 +39,7 @@ nav li a{
 #enlacesInteres a{
     margin-right: 1%;
 }
-
+/* Diseño de la tabla */
 table button{
     background-color: #0f5cb4b4;
     color: #FFFFFF;
@@ -68,19 +68,21 @@ table th{
     text-align: center;
     vertical-align: middle;  
 }
-
+/* Diseño ciudades que he visitado */
 div ul a{
     text-decoration: none;
 }
 div ul a:hover{
     text-decoration: underline  ;
 }
+/* Flecha para volver arriba */
 #flechaArriba{
         position: fixed;
         top: 80%; 
         right: 2%; 
     
 }
+/* Diseño del footer */
 #footer{
     color: white;
     margin-top: 0.5%;
